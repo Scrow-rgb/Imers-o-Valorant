@@ -13,7 +13,7 @@
 /* Estiliza o corpo da página */
 body {
     font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão para o corpo */
-    background-image: url(/assets/bg.jpg); /* Define a imagem de fundo do corpo */
+    background-image: url(bg.jpg); /* Define a imagem de fundo do corpo */
     background-size: cover; /* Faz a imagem de fundo cobrir toda a área */
     min-height: 100vh; /* Garante que o corpo cubra pelo menos a altura da viewport */
     margin: 0; /* Remove a margem padrão do corpo */
