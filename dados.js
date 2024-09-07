@@ -140,7 +140,7 @@ let dados = [
     {
         titulo: "Breach",
         descricao: "Breach, o homem-biônico sueco, dispara poderosos jatos cinéticos para forçar a abertura de um caminho pelo território inimigo. O dano e a interrupção que ele causa garantem que nenhuma luta seja justa.",
-        tags: 'stun flash explosão iniciador bang',
+        tags: 'stun flash explosão iniciador bang brech brith clarao clarão',
         habilidades: [
             {
                 nome: "PÓS-CHOQUE (C)",

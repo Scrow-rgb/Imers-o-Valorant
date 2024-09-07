@@ -181,13 +181,6 @@ footer a {
     cursor: pointer; /* Mantém o cursor de link */
 }
 
-/* Estiliza as imagens de habilidades */
-.img-habilidades {
-    width: 24px; /* Define a largura das imagens */
-    height: 24px; /* Define a altura das imagens */
-    vertical-align: middle; /* Alinha verticalmente no meio */
-    margin-right: 8px; /* Define a margem direita */
-}
 
 /* Responsividade para telas menores */
 @media (max-width: 768px) {
