@@ -10,6 +10,10 @@
     --input-width-mobile: 17rem; /* Largura dos inputs em telas pequenas */
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /* Estiliza o corpo da página */
 body {
     font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão para o corpo */
@@ -279,14 +283,13 @@ footer a {
     h1 {
         font-size: 1.8rem; /* Tamanho da fonte menor para celulares */
         letter-spacing: 0.1rem; /* Espaçamento entre letras menor */
-        margin-top: 10rem;
     }
 
 
     section input {
         width: var(--input-width-mobile); /* Largura menor para inputs em celulares */
         padding: 0.8rem; /* Espaçamento interno menor */
-        margin-bottom: 2rem; /* Espaçamento maior abaixo do input */
+        margin-bottom: 2rem; /*Espaçamento maior abaixo do input */
     }
 
     section button {
@@ -304,9 +307,7 @@ footer a {
     }
     footer {
         font-size: 0.9rem; /* Define o tamanho da fonte do rodapé em telas pequenas */
+        position: relative;
     }
 
-    html{
-        scroll-behavior: smooth;
-    }
 }
