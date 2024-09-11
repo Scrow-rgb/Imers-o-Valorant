@@ -276,12 +276,9 @@ footer a {
     h1 {
         font-size: 1.8rem; /* Tamanho da fonte menor para celulares */
         letter-spacing: 0.1rem; /* Espaçamento entre letras menor */
-        margin-bottom: 1.5rem; /* Adiciona espaço abaixo do título */
-    }
-
-    header{
         margin-top: 10rem;
     }
+
 
     section input {
         width: var(--input-width-mobile); /* Largura menor para inputs em celulares */
