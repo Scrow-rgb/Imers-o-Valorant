@@ -217,13 +217,13 @@ nav {
         font-size: 24px; /* Define o tamanho do ícone */
         color: #fff; /* Define a cor do ícone */
         cursor: pointer; /* Muda o cursor ao passar sobre o ícone */
-        position: absolute; /* Faz o ícone ter um posicionamento absoluto */
-        right: 20px; /* Alinha o ícone à direita da tela */
-        top: 20px; /* Alinha o ícone ao topo */
+        position: fixed; /* Fixa o ícone na posição relativa à tela */
+        right: 10px; /* Ajusta a posição à direita para 10px, garantindo que o ícone fique totalmente visível */
+        top: 20px; /* Mantém o ícone alinhado ao topo com 20px de distância */
+        z-index: 1001; /* Garante que o ícone fique acima de outros elementos da página */
     }
+    
 }
-
-
 
 /* Estiliza o rodapé da página */
 footer {
