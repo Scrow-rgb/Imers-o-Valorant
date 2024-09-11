@@ -15,8 +15,7 @@ function pesquisar() {
     campoPesquisa = campoPesquisa.toLowerCase()
 
 
-    // Itera sobre cada item na base de dados (dados)
-// Itera sobre cada item na base de dados (dados)
+
 // Itera sobre cada item na base de dados (dados)
 for (let dado of dados) {
 
@@ -69,3 +68,11 @@ for (let dado of dados) {
     // Atualiza o conteúdo HTML da seção com os resultados acumulados
     section.innerHTML = resultado;
 }
+
+function toggleMenu(){
+    let menu = document.querySelector('.nav-menu');
+    menu.classList.toggle('show');
+}
+
+
+

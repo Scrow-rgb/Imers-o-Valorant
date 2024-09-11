@@ -151,6 +151,80 @@ section button:hover {
     color: #fff;
 }
 
+/* Estiliza a barra de navegação */
+nav {
+    background-color: rgba(0, 0, 0, 0.5); /* Define o fundo da barra de navegação */
+    padding: 10px 20px; /* Define o espaçamento interno da barra */
+    width: 100%; /* Faz a barra cobrir a largura total da tela */
+    position: fixed; /* Fixa a barra no topo da página */
+    top: 0; /* Alinha ao topo */
+    left: 0; /* Alinha à esquerda */
+    z-index: 1000; /* Garante que a barra fique acima de outros elementos */
+}
+
+.nav-container {
+    display: flex; /* Usa Flexbox para layout do container */
+    justify-content: space-between; /* Espaço entre o logo e o menu */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    max-width: 1200px; /* Define a largura máxima do container */
+    margin: 0 auto; /* Centraliza o container horizontalmente */
+    padding: 10px 20px; /* Adiciona espaçamento ao redor do menu */
+}
+
+.nav-menu {
+    list-style: none; /* Remove os marcadores de lista (bolinhas) */
+    display: flex; /* Exibe os itens da lista em linha */
+}
+
+.nav-menu li {
+    margin-left: 30px; /* Adiciona espaço à esquerda de cada item da lista */
+}
+
+.nav-menu a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #fff; /* Define a cor do texto dos links para branco */
+    font-size: 18px; /* Define o tamanho da fonte dos links */
+    transition: color 0.3s; /* Transição suave de 0.3s na cor dos links */
+}
+
+.nav-menu a:hover {
+    color: red; /* Altera a cor do texto dos links para vermelho ao passar o mouse */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: row; /* Mantém os itens em linha */
+        justify-content: space-between; /* Mantém espaço entre os itens */
+    }
+
+    .nav-menu {
+        flex-direction: column; /* Exibe os itens da lista em coluna */
+        display: none; /* Inicialmente esconde o menu em telas menores */
+    }
+
+    .nav-menu li {
+        margin-left: 0; /* Remove o espaçamento à esquerda dos itens da lista */
+        margin-bottom: 10px; /* Adiciona espaço abaixo de cada item da lista */
+    }
+
+    .nav-menu.show {
+        display: flex; /* Mostra o menu ao clicar no botão */
+    }
+
+    .nav-toggle {
+        display: block; /* Mostra o ícone de menu (hambúrguer) em telas pequenas */
+        font-size: 24px; /* Define o tamanho do ícone */
+        color: #fff; /* Define a cor do ícone */
+        cursor: pointer; /* Muda o cursor ao passar sobre o ícone */
+        position: absolute; /* Faz o ícone ter um posicionamento absoluto */
+        right: 20px; /* Alinha o ícone à direita da tela */
+        top: 20px; /* Alinha o ícone ao topo */
+    }
+}
+
+
+
 /* Estiliza o rodapé da página */
 footer {
     background-color: rgba(0, 0, 0, 0.5); /* Define a cor de fundo do rodapé */
@@ -161,17 +235,7 @@ footer {
     position: absolute; /* Posiciona o rodapé de forma absoluta */
     bottom: 0; /* Alinha o rodapé ao fundo da página */
     font-size: 1rem; /* Define o tamanho da fonte do rodapé */
-    animation: slideUp 0.5s ease-out; /* Animação de deslizar para cima */
-}
 
-/* Animação de deslizar para cima do rodapé */
-@keyframes slideUp {
-    from {
-        transform: translateY(100%); /* Começa com o rodapé fora da viewport */
-    }
-    to {
-        transform: translateY(0); /* Termina com o rodapé no fundo da página */
-    }
 }
 
 /* Estiliza os links no rodapé */
