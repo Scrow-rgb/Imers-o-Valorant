@@ -233,6 +233,34 @@ footer a {
         font-size: 1.3rem; /* Define o tamanho da fonte dos títulos em telas menores */
     }
 
+    
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem; /* Define o tamanho da fonte em telas pequenas */
+        letter-spacing: 0.1rem; /* Define o espaçamento entre letras em telas pequenas */
+    }
+
+    section input {
+        width: var(--input-width-mobile); /* Define a largura dos inputs em telas pequenas */
+    }
+
+    section button {
+        padding: 0.6rem 1rem; /* Define o espaçamento interno dos botões em telas pequenas */
+        font-size: 0.9rem; /* Define o tamanho da fonte dos botões em telas pequenas */
+    }
+
+    .resultados-pesquisa {
+        width: 90%; /* Define a largura da caixa de resultados em telas pequenas */
+        height: 50vh; /* Define a altura da caixa de resultados em telas pequenas */
+    }
+
+    .item-resultado h2 {
+        font-size: 1.1rem; /* Define o tamanho da fonte dos títulos em telas pequenas */
+    }
+
     .nav-container {
         flex-direction: row; /* Mantém os itens em linha */
         justify-content: space-between; /* Mantém espaço entre os itens */
@@ -261,32 +289,6 @@ footer a {
         right: 10px; /* Alinha o ícone à direita */
         top: 10px; /* Alinha o ícone ao topo */
         z-index: 1001; /* Garante que o ícone fique acima do menu */
-    }
-}
-
-/* Responsividade para celulares */
-@media (max-width: 480px) {
-    h1 {
-        font-size: 1.8rem; /* Define o tamanho da fonte em telas pequenas */
-        letter-spacing: 0.1rem; /* Define o espaçamento entre letras em telas pequenas */
-    }
-
-    section input {
-        width: var(--input-width-mobile); /* Define a largura dos inputs em telas pequenas */
-    }
-
-    section button {
-        padding: 0.6rem 1rem; /* Define o espaçamento interno dos botões em telas pequenas */
-        font-size: 0.9rem; /* Define o tamanho da fonte dos botões em telas pequenas */
-    }
-
-    .resultados-pesquisa {
-        width: 90%; /* Define a largura da caixa de resultados em telas pequenas */
-        height: 50vh; /* Define a altura da caixa de resultados em telas pequenas */
-    }
-
-    .item-resultado h2 {
-        font-size: 1.1rem; /* Define o tamanho da fonte dos títulos em telas pequenas */
     }
 
     footer {
