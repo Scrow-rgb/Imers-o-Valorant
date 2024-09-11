@@ -13,7 +13,7 @@
 /* Estiliza o corpo da página */
 body {
     font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão para o corpo */
-    background-image: url(bg.jpg); /* Define a imagem de fundo do corpo */
+    background-image: url(fundo.jpg); /* Define a imagem de fundo do corpo */
     background-size: cover; /* Faz a imagem de fundo cobrir toda a área */
     min-height: 100vh; /* Garante que o corpo cubra pelo menos a altura da viewport */
     margin: 0; /* Remove a margem padrão do corpo */
@@ -42,6 +42,7 @@ h1 {
     font-weight: 700; /* Define o peso da fonte */
     text-align: center; /* Alinha o texto ao centro */
     letter-spacing: 0.4rem; /* Define o espaçamento entre letras */
+    margin-top: 10rem;
     overflow: hidden; /* Esconde o texto que ultrapassa o container */
     border-right: 0.15em solid #F0F0F0; /* Cria o efeito de cursor piscando com borda */
     white-space: nowrap; /* Impede que o texto quebre linhas */
@@ -93,7 +94,7 @@ section button {
     padding: 0.8rem 1.2rem; /* Define o espaçamento interno dos botões */
     border: none; /* Remove a borda padrão dos botões */
     border-radius: 1.5rem; /* Define a borda arredondada dos botões */
-    background-color: rgba(211, 29, 29, 0.61); /* Define a cor de fundo dos botões */
+    background-color: rgba(224, 224, 224, 0.61); /* Define a cor de fundo dos botões */
     color: var(--secondary-color); /* Define a cor do texto dos botões */
     font-size: 1rem; /* Define o tamanho da fonte dos botões */
     cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
@@ -149,6 +150,7 @@ section button:hover {
 
 .erro-input{
     color: #fff;
+    white-space: nowrap;
 }
 
 /* Estiliza a barra de navegação */
@@ -214,6 +216,14 @@ footer a {
 
 /* Responsividade para telas menores */
 @media (max-width: 768px) {
+    
+    body{
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    
     h1 {
         font-size: 2rem; /* Define o tamanho da fonte em telas menores */
         letter-spacing: 0.2rem; /* Define o espaçamento entre letras em telas menores */
@@ -262,13 +272,6 @@ footer a {
         top: 10px; /* Alinha o ícone ao topo */
         z-index: 1001; /* Garante que o ícone fique acima do menu */
     }
-
-    .erro-input{
-        display: flex;
-        flex-direction: column;
-    }
-
-    
 }
 
 /* Responsividade para celulares */
@@ -301,6 +304,9 @@ footer a {
     }
     footer {
         font-size: 0.9rem; /* Define o tamanho da fonte do rodapé em telas pequenas */
-        position: relative; /* Remove o position absolute e usa relative */
+    }
+
+    html{
+        scroll-behavior: smooth;
     }
 }
