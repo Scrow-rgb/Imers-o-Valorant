@@ -153,13 +153,13 @@ section button:hover {
 
 /* Estiliza a barra de navegação */
 nav {
-    background-color: rgba(0, 0, 0, 0.5); /* Define o fundo da barra de navegação */
-    padding: 10px 20px; /* Define o espaçamento interno da barra */
-    width: 100%; /* Faz a barra cobrir a largura total da tela */
-    position: fixed; /* Fixa a barra no topo da página */
-    top: 0; /* Alinha ao topo */
-    left: 0; /* Alinha à esquerda */
-    z-index: 1000; /* Garante que a barra fique acima de outros elementos */
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo do menu */
+    padding: 10px 20px; /* Espaçamento interno do menu */
+    width: 100%; /* O menu ocupa toda a largura */
+    position: fixed; /* Mantém o menu fixo no topo */
+    top: 0; /* Alinha o menu ao topo da tela */
+    left: 0; /* Alinha o menu à esquerda da tela */
+    z-index: 1000; /* Garante que o menu fique acima de outros elementos */
 }
 
 .nav-container {
@@ -191,52 +191,18 @@ nav {
     color: red; /* Altera a cor do texto dos links para vermelho ao passar o mouse */
 }
 
-/* Responsividade para telas menores */
-@media (max-width: 768px) {
-    .nav-container {
-        flex-direction: row; /* Mantém os itens em linha */
-        justify-content: space-between; /* Mantém espaço entre os itens */
-    }
-
-    .nav-menu {
-        flex-direction: column; /* Exibe os itens da lista em coluna */
-        display: none; /* Inicialmente esconde o menu em telas menores */
-    }
-
-    .nav-menu li {
-        margin-left: 0; /* Remove o espaçamento à esquerda dos itens da lista */
-        margin-bottom: 10px; /* Adiciona espaço abaixo de cada item da lista */
-    }
-
-    .nav-menu.show {
-        display: flex; /* Mostra o menu ao clicar no botão */
-    }
-
-    .nav-toggle {
-        display: block; /* Mostra o ícone de menu (hambúrguer) em telas pequenas */
-        font-size: 24px; /* Define o tamanho do ícone */
-        color: #fff; /* Define a cor do ícone */
-        cursor: pointer; /* Muda o cursor ao passar sobre o ícone */
-        position: fixed; /* Fixa o ícone na posição relativa à tela */
-        right: 10px; /* Ajusta a posição à direita para 10px, garantindo que o ícone fique totalmente visível */
-        top: 20px; /* Mantém o ícone alinhado ao topo com 20px de distância */
-        z-index: 1001; /* Garante que o ícone fique acima de outros elementos da página */
-    }
-    
-}
-
 /* Estiliza o rodapé da página */
 footer {
-    background-color: rgba(0, 0, 0, 0.5); /* Define a cor de fundo do rodapé */
-    color: var(--secondary-color); /* Define a cor do texto do rodapé */
-    text-align: center; /* Alinha o texto ao centro */
-    padding: 20px 0; /* Define o espaçamento interno do rodapé */
-    width: 100%; /* Define a largura total do rodapé */
-    position: absolute; /* Posiciona o rodapé de forma absoluta */
-    bottom: 0; /* Alinha o rodapé ao fundo da página */
-    font-size: 1rem; /* Define o tamanho da fonte do rodapé */
-
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo */
+    color: var(--secondary-color); /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px 0; /* Espaçamento interno */
+    width: 100%; /* O rodapé ocupa toda a largura */
+    position: absolute; /* Remover o position absolute e usar relative */
+    bottom: 0; /* Posiciona o rodapé no final da página */
+    font-size: 1rem; /* Tamanho da fonte */
 }
+
 
 /* Estiliza os links no rodapé */
 footer a {
@@ -265,6 +231,36 @@ footer a {
 
     .item-resultado h2 {
         font-size: 1.3rem; /* Define o tamanho da fonte dos títulos em telas menores */
+    }
+
+    .nav-container {
+        flex-direction: row; /* Mantém os itens em linha */
+        justify-content: space-between; /* Mantém espaço entre os itens */
+    }
+
+    .nav-menu {
+        flex-direction: column; /* Exibe os itens da lista em coluna */
+        display: none; /* Inicialmente esconde o menu em telas menores */
+    }
+
+    .nav-menu li {
+        margin-left: 0; /* Remove o espaçamento à esquerda dos itens da lista */
+        margin-bottom: 10px; /* Adiciona espaço abaixo de cada item da lista */
+    }
+
+    .nav-menu.show {
+        display: flex; /* Mostra o menu ao clicar no botão */
+    }
+
+    .nav-toggle {
+        display: block; /* Mostra o ícone de menu em telas pequenas */
+        font-size: 24px; /* Tamanho do ícone */
+        color: #fff; /* Cor do ícone */
+        cursor: pointer; /* Muda o cursor ao passar sobre o ícone */
+        position: fixed; /* Fixa o ícone na posição */
+        right: 10px; /* Alinha o ícone à direita */
+        top: 10px; /* Alinha o ícone ao topo */
+        z-index: 1001; /* Garante que o ícone fique acima do menu */
     }
 }
 
@@ -295,5 +291,6 @@ footer a {
 
     footer {
         font-size: 0.9rem; /* Define o tamanho da fonte do rodapé em telas pequenas */
+        position: relative; /* Remove o position absolute e usa relative */
     }
 }
