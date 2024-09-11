@@ -307,7 +307,8 @@ footer a {
     }
 
     .erro-input{
-        font-size: 0.8rem;
+        font-size: 0.9rem;
+        
     }
     footer {
         font-size: 0.9rem; /* Define o tamanho da fonte do rodapé em telas pequenas */

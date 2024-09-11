@@ -8,7 +8,7 @@ function pesquisar() {
     console.log(campoPesquisa)
 
     if (!campoPesquisa || campoPesquisa == " ") {
-        section.innerHTML = '<p class = "erro-input">Nada foi encontrado. Você precisa digitar algo relacionado</p>'
+        section.innerHTML = '<p class = "erro-input">Você precisa digitar algo relacionado</p>'
         return
     }
 
